@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,4 +19,89 @@
     <script src="./dist/index.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="year" onchange="setDateDemo()"></select>
+    <select name="" id="month"  onchange="setDateDemo()"></select>
+    <select name="" id="date"></select>
+
+    <script>
+        //添加selelct的子节点对象
+        function addOptMethod(id,start,end){
+            var select=document.getElementById(id);
+            for(var i=start;i<=end;i++){
+                var opt=document.createElement("option")
+                opt.value=i;
+                opt.text=i;
+                select.add(opt)
+            }
+        }
+        // 清空子节点对象的方法
+        function clearDate(id){
+            var select=document.getElementById(id);
+            var s=select.options; //所有的select的下拉项
+            for(var i=s.length-1;i>=0;i--){
+                select.removeChild(s[i])
+            }
+        }
+        // 根据选择的年月增加日期
+        function setDateDemo(){
+            clearDate("date")
+            var y=document.getElementById("year").value;
+            var m=parseInt(document.getElementById("month").value);
+            var index;
+            var flag=y%400==0||(y%4==0&&y%100!=0);
+            switch(m){
+                case 1:;
+                case 3:;
+                case 5:;
+                case 7:;
+                case 8:;
+                case 10:;
+                case 12:index=31;break;
+                case 4:;
+                case 6:;
+                case 9:;
+                case 11:;break;
+                // case 2:if(flag){d=29}else{d=28};
+                case 2:index=flag?29:28;break
+            }
+            console.log(index);
+            addOptMethod("date",1,index)
+        }
+        // 添加年
+        var d=new Date().getFullYear()
+        addOptMethod("year",d-10,d);
+        addOptMethod("month",1,12);
+    </script>
+
+
+
+<script>
+   /*  var cs=[
+        {p:'浙江',c:["sda","edww"]},
+        {p:'江苏',c:["sda","edww"]},
+        {p:'安徽',c:["sda","edww"]}
+    ] */
+
+    var obj=[];
+    obj["浙江"]=["杭州","台州","丽水","温州"]
+    obj["江苏"]=["苏州","徐州","南京"]
+    obj["安徽"]=["合肥","黄山"]
+
+    console.log(obj["浙江"]);
+    for(var t in obj){
+        console.log(t);
+    }
+</script>
+</body>
+>>>>>>> 66a02930d70606e7c6eee003cf1ef6d5a77810e0
 </html>
