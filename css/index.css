@@ -1,0 +1,77 @@
+.dd {
+  padding: 0px 30px;
+  line-height: 25px;
+}
+h1 {
+  color: #0e0e85;
+  font-size: 34px;
+  padding-left: 30px;
+}
+.light {
+  color: gray;
+  padding: 0px 30px;
+  line-height: 25px;
+}
+ul {
+  margin-left: 50px;
+}
+ul li {
+  font-size: 14px;
+}
+ul li a {
+  color: #5794da;
+  text-decoration: none;
+}
+.imp {
+  padding: 0px 30px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+p {
+  margin: 0px;
+}
+.box {
+  width: 91%;
+  background-color: #ece9e9;
+  border: 1px solid #6d6767;
+  margin: auto;
+  font-size: 14px;
+  line-height: 25px;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+.box .purple {
+  color: purple;
+}
+.box .green {
+  color: #36e0f7;
+}
+.box .yellow {
+  color: #ac5209;
+}
+.box .blue {
+  color: #5794da;
+}
+.gohref {
+  color: #5794da;
+  font-size: 18px;
+  padding: 0px 30px;
+  line-height: 25px;
+  text-decoration: none;
+  line-height: 40px;
+}
+.gohref:hover {
+  color: #0e0e85;
+  text-decoration: underline;
+}
+.blueblack {
+  color: #0e0e85;
+}
+.imp a {
+  color: #5794da;
+  text-decoration: none;
+}
+.light p a {
+  color: #5794da;
+  text-decoration: none;
+}

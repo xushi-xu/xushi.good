@@ -1,0 +1,15 @@
+{
+  "name": "xs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"babel src/index.js -o dist/index.js"
+  },
+  "author": "xushi",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
